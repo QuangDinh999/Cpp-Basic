@@ -9,54 +9,54 @@
 int main()
 {
     using namespace std;
-    std::string name;
-    int age;
-    string address;
-    string hobbies;
-    int score1;
-    int score2;
-    int score3;
-    string rank;
+    std::cout << "Enter number of students ";
+    short number;
+    cin >> number;
 
+    cin.ignore(100, '\n');
 
+    string name[50];
+    short age[50];
+    string klass[50];
 
-    cout << "Enter your name: ";
-    std::getline(std::cin, name);
-    
-    cout << "Enter your age: ";
-    cin >> age;
+    double math[50], physical[50], chemistry[50], avg[50];
 
-    cout << "Enter your class: ";
-    cin >> address;
-    
-    cout << "Enter your hobbies: ";
-    cin >> hobbies;
    
-    cout << "math score: ";
-    cin >> score1;
-   
-    cout << "physical score: ";
-    cin >> score2;
-   
-    cout << "chemistry score: ";
-    cin >> score3;
-       
-    float sum1 = score1 + score2 + score3 ;
-    float sum2 = sum1 / 3;
-   
-    cout << "Rank: ";
-    cin >> rank;
-    
 
-    cout << "Hello my name is: " << name << '\n';
-    cout << "Im " << age << " years old" << '\n';
-    cout << "Im from " << address << '\n';
-    cout << "My hobbies is " << hobbies << '\n';
-    cout << "math score: " << score1 << '\n';
-    cout << "physical score: " << score2 << '\n';
-    cout << "chemistry score: " << score3 << '\n';
-    cout << "dtb: " << sum2 << '\n';
-    cout << "rank: " << rank << '\n';
+    for (int i = 0; i < number; ++i) {
+        cout << "Enter name of student " << i + 1 << " : ";
+        getline(cin, name[i]);
+
+
+
+        cout << "Enter age: ";
+        cin >> age[i];
+        cin.ignore(100, '\n');
+
+
+        cout << "Enter class: ";
+        getline(cin, klass[i]);
+
+        /*cout << name[i] << '\n';
+        cout << age[i] << '\n';
+        cout << klass[i] << '\n';*/
+
+        cout << "Enter your marks: ";
+        cin >> math[i] >> physical[i] >> chemistry[i];
+
+        avg[i] = (math[i] + physical[i] + chemistry[i]) / 3;
+
+        cin.ignore(100, '\n');
+     }
+
+    for (int i = 0; i < number; ++i) {
+        cout << "student " << i + 1 << " : " << name[i] << '\n';
+        cout << "math: " << math[i] << '\n';
+        cout << "physical: " << physical[i] << '\n';
+        cout << "chemistry: " << chemistry[i] << '\n';
+        cout << "avg: " << avg[i] << '\n';
+
+    }
 
 
 }
