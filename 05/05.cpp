@@ -32,7 +32,7 @@ int main()
 	getline(cin, name);*/
 
 
-	/*int a;
+	int a;
 	int b;
 	double nghiem;
 	cout << "a = ";
@@ -50,28 +50,9 @@ int main()
 	else {
 		nghiem = (double)-b / a;
 		cout << "phuong trinh bac 1 co nghiem la:" << nghiem << '\n';
-	}*/
-	
-	
-	/*int a;
-	int b;
-	double nghiem;
-	cout << "Nhap a = ";
-	cin >> a;
-	cout << "Nhap b = ";
-	cin >> b;
-	if (a == 0) {
-		if (b == 0) {
-			cout << "Phuong trinh vo so nghiem" << '\n';
-		}
-		else {
-			cout << "Phuong trinh vo nghiem" << '\n';
-		}
 	}
-	else {
-		nghiem = (double)-b / a;
-		cout << "Phuong trinh co nghiem la: " << nghiem << '\n';
-	}*/
+	
+	
 
 	int a;
 	int b;
