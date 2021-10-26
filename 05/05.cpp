@@ -54,7 +54,30 @@ int main()
 	}
 	
 
+// nhap so
+	int number;
+	string name;
 
+	cout << "1.nhap so hai chu so: ";
+	cin >> number;
+	cin.ignore(100, '\n');
+	cout << "1.viet bang tieng viet: ";
+	cin >> name;
+	getline(cin, name);
+	cout << "2.nhap so hai chu so: ";
+	cin >> number;
+	cin.ignore(100, '\n');
+	cout << "2.viet bang tieng viet: ";
+	cin >> name;
+	getline(cin, name);
+	cout << "3.nhap so hai chu so: ";
+	cin >> number;
+
+	cin.ignore(100, '\n');
+
+	cout << "3.viet bang tieng viet: ";
+	cin >> name;
+	getline(cin, name);
 
 
 }
