@@ -7,31 +7,9 @@
 int main()
 {
 	using namespace std;
-	/*short number;
-	string name;
+	
 
-	cout << "1.nhap so hai chu so: ";
-	cin >> number;
-	cin.ignore(100, '\n');
-	cout << "1.viet bang tieng viet: ";
-	cin >> name;
-	getline(cin, name);
-	cout << "2.nhap so hai chu so: ";
-	cin >> number;
-	cin.ignore(100, '\n');
-	cout << "2.viet bang tieng viet: ";
-	cin >> name;
-	getline(cin, name);
-	cout << "3.nhap so hai chu so: ";
-	cin >> number;
-
-	cin.ignore(100, '\n');
-
-	cout << "3.viet bang tieng viet: ";
-	cin >> name;
-	getline(cin, name);*/
-
-
+//giai phuong trinh
 	int a;
 	int b;
 	double nghiem;
@@ -52,7 +30,7 @@ int main()
 		cout << "phuong trinh bac 1 co nghiem la:" << nghiem << '\n';
 	}
 	
-	
+//max, min	
 
 	int a;
 	int b;
